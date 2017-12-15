@@ -12,7 +12,7 @@ Certifique-se de seguir estas diretrizes:
 
 * Siga o algum [estilo de código](https://en.wikipedia.org/wiki/Programming_style), de preferência o oficial da própria linguagem/framework.
 * Escreva código em inglês.
-* Use algum gerenciador pacotes para dependências de terceiros, se necessário.
+* Use algum [gerenciador de pacotes](https://en.wikipedia.org/wiki/Package_manager) para dependências de terceiros, se necessário.
 * Organize o código de acordo com as mehores práticas da linguagem/framework e padrões de projetos.
 * Cobertura de testes (unitários, integrados):
   * Entrega com no mínimo 80% de cobertura dos testes;
@@ -50,6 +50,8 @@ Crie uma aplicação (cliente e servidor) de cadastro de veículos. O servidor d
 
 * [git - the simple guide](https://rogerdudler.github.io/git-guide/)
 * [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
+* [A curated list of awesome READMEs](https://github.com/matiassingers/awesome-readme)
+* [README.md template for your open-source project](https://github.com/dbader/readme-template)
 * [Learn REST: A RESTful Tutorial](http://www.restapitutorial.com/)
 * [Best Practices for Designing a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
 * [Roy Fielding on Versioning, Hypermedia, and REST](https://www.infoq.com/articles/roy-fielding-on-versioning)
