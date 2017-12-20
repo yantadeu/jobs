@@ -7,6 +7,9 @@ PROJECT_NAME = "jobs"
 SONAR_PROJECT_NAME = "projetas/jobs"
 SONAR_PROJECT_KEY = "projetas:jobs"
 
+PROJECT_ENV = "DEVELOPMENT"
+PROJECT_VERSION = "${env.BRANCH_NAME}-${BUILD_ID}"
+
 node {
     checkout()
     checkPreconditions()
