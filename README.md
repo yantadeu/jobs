@@ -54,6 +54,7 @@ Crie uma aplicação (cliente e servidor) de cadastro de veículos. O servidor d
 
 * [git - the simple guide](https://rogerdudler.github.io/git-guide/)
 * [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
+* [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet)
 * [A curated list of awesome READMEs](https://github.com/matiassingers/awesome-readme)
 * [README.md template for your open-source project](https://github.com/dbader/readme-template)
 * [Learn REST: A RESTful Tutorial](http://www.restapitutorial.com/)
