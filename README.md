@@ -1,6 +1,10 @@
-# Espeficiação da Aplicação
+# Especificação da Aplicação
 
-Nós criamos esta pequena especificação para ajudá-lo a criar aplicativos incríveis e consistentes. Certifique-se de que não só leia, mas também a compreenda. 
+Nós criamos esta pequena especificação para ajudá-lo a criar aplicativos incríveis e consistentes. As diretrizes e requisitos descritos abaixo fazem parte do nosso processo de desenvolvimento. Certifique-se de que não só leia, mas também a compreenda. 
+
+_Observação:_ [Sócrates](https://en.wikipedia.org/wiki/Socrates) e [nós](http://projetas.com.br/), sabemos que ninguém sabe tudo, não se preocupe se não terminar toda a aplicação, faça o seu melhor e divirta-se, ;-).
+
+> Sócrates diz: Sábio é aquele que conhece os limites da própria ignorância.
 
 ## README
 
@@ -13,12 +17,12 @@ Certifique-se de seguir estas diretrizes:
 * Siga o algum [estilo de código](https://en.wikipedia.org/wiki/Programming_style), de preferência o oficial da própria linguagem/framework.
 * Escreva código em inglês.
 * Use algum [gerenciador de pacotes](https://en.wikipedia.org/wiki/Package_manager) para dependências de terceiros, se necessário.
-* Organize o código de acordo com as mehores práticas da linguagem/framework e padrões de projetos.
+* Organize o código de acordo com as melhores práticas da linguagem/framework e padrões de projetos.
 * Cobertura de testes (unitários, integrados):
   * Entrega com no mínimo 80% de cobertura dos testes;
   * Menos que 20% de duplicação de código;
-  * Não é aceito nenhum defeito, vulnerabilidade, débito técnico ou fator de complexidade de código alta;
-* Matenha simples o código (KISS).
+  * Nenhum defeito, vulnerabilidade, débito técnico ou fator de complexidade de código alta;
+* Mantenha simples o código (KISS).
 * Atenção na extensibilidade e manutenibilidade do código:
 * Exigimos que as aplicações funcionem em plataformas com arquitetura x86 e sistemas operacionais, tais como: Microsoft Windows, macOS e Linux.
 
@@ -41,7 +45,7 @@ Crie uma aplicação (cliente e servidor) de cadastro de veículos. O servidor d
 ## Instruções
 
 * Utilize a tecnologia de sua escolha (sempre seguindo as diretrizes de código).
-* Se caso, o canditado não tenha domínios do `cliente` ou do `servidor`, faça apenas um deles. Se necessário, utilize algum tipo de simulação (mock) para o funcionamento da aplicação.
+* Se caso, o candidato não tenha domínios do `cliente` ou do `servidor`, faça apenas um deles. Se necessário, utilize algum tipo de simulação (mock) para o funcionamento da aplicação.
 * Desenvolva em um ramo (branch) com o nome do seu usuário no GitHub e submeta uma solicitação de mudança (pull request) contra o ramo mestre padrão (master). 
 * Squash seus compromissos (commits). 
 * Escreva uma descrição convincente de sua solicitação de mudança (pull request) de acordo com o guia [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/).
