@@ -2,7 +2,7 @@
 
 Nós criamos esta pequena especificação para ajudá-lo a criar aplicativos incríveis e consistentes. As diretrizes e requisitos descritos abaixo fazem parte do nosso processo de desenvolvimento. Certifique-se de que não só leia, mas também a compreenda. 
 
-_Observação:_ [Sócrates](https://en.wikipedia.org/wiki/Socrates) e [nós](http://projetas.com.br/), sabemos que ninguém sabe tudo, não se preocupe se não terminar toda a aplicação, faça o seu melhor e divirta-se, ;-).
+_Observação:_ [Sócrates](https://en.wikipedia.org/wiki/Socrates) e [nós](http://projetas.com.br/) estamos ciente que ninguém sabe tudo, não se preocupe de não terminar toda a aplicação, faça o seu melhor, nos envie e divirta-se, ;-).
 
 > Sócrates diz: Sábio é aquele que conhece os limites da própria ignorância.
 
