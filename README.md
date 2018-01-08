@@ -46,7 +46,7 @@ Crie uma aplicação (cliente e servidor) de cadastro de veículos. O servidor d
 
 * Utilize a tecnologia de sua escolha (sempre seguindo as diretrizes de código).
 * Se caso, o candidato não tenha domínios do `cliente` ou do `servidor`, faça apenas um deles. Se necessário, utilize algum tipo de simulação (mock) para o funcionamento da aplicação.
-* Desenvolva em um ramo (branch) com o nome do seu usuário no GitHub e submeta uma solicitação de mudança (pull request) contra o ramo mestre padrão (master). 
+* Desenvolva em um ramo (branch) com o nome do seu usuário no GitHub e submeta uma [solicitação de mudança](https://help.github.com/articles/creating-a-pull-request/) (pull request) contra o ramo mestre padrão (master). 
 * Squash seus compromissos (commits). 
 * Escreva uma descrição convincente de sua solicitação de mudança (pull request) de acordo com o guia [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/).
 
