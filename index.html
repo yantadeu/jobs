@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projetas - Teste - Yan Tadeu</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Vendors-->
+    <link rel="stylesheet" media="all" href="vendor/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" media="all" href="vendor/dataTables/css/datatables.min.css"/>
+    <link rel="stylesheet" media="all" href="vendor/sweetAlert/sweetalert.css"/>
+
+    <!--App styles-->
+    <link rel="stylesheet" media="all" href="css/desafio.css"/>
+</head>
+
+<body>
+
+<nav class="navbar navbar-frotas">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#">
+                <img alt="Logo" src="images/logo.png" title="Projetas" class="logo-projetas">
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div id="page-wrapper">
+
+    <div class="container">
+        <div class="projetas-page">
+            <div class="projetas-tema bottom">
+                <div class="table-wrapper">
+                    <div class="no-margin row">
+                        <div class="table-responsive">
+                            <div class="no-padding col-xs-12">
+                                <div class="col-xs-2 button-new-vehicle">
+                                    <button type="button" class="projetas-btn projetas-btn-primary"
+                                            data-toggle="modal"
+                                            data-target="#modal-vehicle-form">
+                                        Novo Veículo
+                                    </button>
+                                </div>
+                                <div class="col-xs-2 button-new-vehicle responsive-div-btn-remover">
+                                    <button type="button" class="projetas-btn projetas-btn-danger btn-remove-vehicle"><i
+                                            class="glyphicon glyphicon-remove"></i>
+                                        Excluir
+                                    </button>
+                                </div>
+                            </div>
+                            <br/>
+                            <br/>
+                            <table id="vehicles-table" class="table projetas-tema table-hover">
+                                <thead>
+                                <tr>
+                                    <th class="table-border-left"><input type="checkbox" id="select-vehicles"></th>
+                                    <th>Placa</th>
+                                    <th>Marca</th>
+                                    <th>Modelo</th>
+                                    <th>Cor</th>
+                                    <th>Ano</th>
+                                    <th>Valor</th>
+                                    <th>É novo?</th>
+                                    <th>Imagem</th>
+                                    <th>Combustível</th>
+                                    <th>Descrição</th>
+                                    <th>Dt. Cadastro</th>
+                                    <th>Dt. Atualização</th>
+
+                                </tr>
+                                </thead>
+
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                <i data-toggle="tooltip" data-placement="right" title='Clique na linha para editar o veículo'
+                   class="glyphicon glyphicon-info-sign info"></i>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="col-xs-4 col-xs-offset-4">
+        Projetas - Teste -  YAN TADEU
+    </div>
+</footer>
+
+<!-- Form Modal -->
+<div class="modal fade" id="modal-vehicle-form" tabindex="-1" role="dialog" aria-labelledby="FormVehicle">
+    <div class="modal-dialog" role="document">
+        <form action="" id="form-vehicle">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Veículo</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="data_cadastro" name="data_cadastro" />
+                    <input type="hidden" id="data_atualizacao" name="data_atualizacao" />
+                    <div class="form-group">
+                        <label for="marca">Marca *</label>
+                        <input type="text" class="form-control" id="marca" name="marca" maxlength="40"
+                               placeholder="Ex: Volkswagem, Audi, Ford, etc"
+                               required>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="modelo">Modelo *</label>
+                        <input type="text" class="form-control" id="modelo" name="modelo" maxlength="50"
+                               placeholder="Ex: Fox, Fusca, Gol, Fusion, etc"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cor">Cor *</label>
+                        <input type="text" class="form-control" id="cor" name="cor" maxlength="30"
+                               placeholder="Ex: Branco, Preto, Prata, etc"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="placa">Placa *</label>
+                        <input type="text" class="form-control" id="placa" name="placa" placeholder="Ex: XYZ 9999"
+                               required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ano">Ano *</label>
+                        <input type="number" class="form-control" id="ano" name="ano" placeholder="Ex: 2015"
+                               required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="valor">Preço * </label>
+                        <input type="text" class="form-control valor" id="valor" name="valor" required
+                               placeholder="Ex: R$ 20.000,00">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="novo">É novo? * </label>
+                        <select class="form-control" id="novo" name="novo">
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="imagem">Imagem</label>
+                        <input type="text" class="form-control" id="imagem" name="imagem"
+                               placeholder="Ex: http://exemplo.com/ferrari.png">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="combustivel">Combustível</label>
+                        <select class="form-control" id="combustivel" name="combustivel">
+                            <option value=""></option>
+                            <option value="Gasolina">Gasolina</option>
+                            <option value="Álcool">Álcool</option>
+                            <option value="Flex">Flex</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="combustivel">Descrição</label>
+                        <textarea id="descricao" name="descricao" class="form-control"></textarea>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary" >Salvar</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<!-- Image modal -->
+<div class="modal fade" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="Image" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Fechar</span></button>
+                <h4 class="modal-title" id="myModalLabel">Imagem</h4>
+            </div>
+            <div class="modal-body">
+                <div class="preview-imagem-container">
+                    <img src="" id="image-preview">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Vendors-->
+<script src="vendor/jquery/jquery-2.2.0.min.js"></script>
+<script src="vendor/bootstrap/bootstrap.min.js"></script>
+<script src="vendor/dataTables/js/datatables.min.js"></script>
+<script src="vendor/sweetAlert/sweetalert.min.js"></script>
+<script src="vendor/jquery/jquery.money/jquery.maskMoney.min.js"></script>
+<script src="vendor/jquery/livequery/jquery.livequery.min.js"></script>
+
+
+<!--App scripts-->
+<script src="js/dataTablesVehicles.js"></script>
+<script src="js/vehicle.js"></script>
+
+</body>
+</html>
